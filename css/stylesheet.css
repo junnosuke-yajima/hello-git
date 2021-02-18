@@ -3,16 +3,19 @@
     padding: 0;
 }
 
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 90px;
+    height: 50px;
     background-color: #000000;
 }
 
 main {
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 #nav {
@@ -26,7 +29,7 @@ main {
     z-index: 10;
 }
 #nav ul {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 #nav ul li{
@@ -50,10 +53,10 @@ main {
 #hamburger {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 30px;
-    width: 50px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: 1s;
     z-index: 100;
@@ -63,7 +66,7 @@ main {
     display: block;
     position: absolute;
     left: 0;
-    width: 50px;
+    width: 30px;
     height: 3px;
     background-color: #ffffff;
     border-radius: 4px;
@@ -73,7 +76,7 @@ main {
     top: 0;
 }
 #line2 {
-    top: 20px;
+    top: 13px;
 }
 #line3 {
     bottom: 0px;
@@ -88,14 +91,14 @@ main {
 }
 
 .line_1 {
-    transform: translateY(20px) rotate(-45deg);
+    transform: translateY(5px) rotate(-45deg);
     top: 0;
 }
 .line_2 {
     opacity: 0;
 }
 .line_3 {
-    transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-5px) rotate(45deg);
     bottom: 0;
 }
 
