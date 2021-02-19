@@ -1,15 +1,14 @@
 (function(){
     'use strict';
     var timer = document.getElementById('timer');
-    var start = document.getElementById('start');
-    var stop = document.getElementById('stop');
-    var reset = document.getElementById('reset');
-    var lap = document.getElementById('lap');
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
     var showLap = document.getElementById('showLap');
     var startTime;
     var elapsedTime = 0;
     var timerId;
     var timeToadd = 0;
+    var lapCount = 0;
 
     function convartTime(){
         var time = new Object();
@@ -40,26 +39,58 @@
         },10);
     }
 
-    start.addEventListener('click', function(){
-        startTime = Date.now();
-        countUp();
+    left.addEventListener('click', function(){
+        if(left.classList.contains('start') === true) {
+            startTime = Date.now();
+            countUp();
+            left.classList.add('stop');
+            left.classList.add('left');
+            right.classList.add('lap');
+            right.classList.add('right');
+            left.classList.remove('start');
+            right.classList.remove('hide');
+            left.innerHTML = 'stop';
+        } else if(left.classList.contains('stop') === true) {
+            clearTimeout(timerId);
+            timeToadd += Date.now() - startTime;
+            left.classList.add('restart');
+            right.classList.add('reset');
+            left.classList.remove('stop');
+            right.classList.remove('lap');
+            left.innerHTML = 'restart';
+            right.innerHTML = 'reset';
+        } else if(left.classList.contains('restart') === true) {
+            startTime = Date.now();
+            countUp();
+            left.classList.add('stop');
+            right.classList.add('lap');
+            left.classList.remove('restart');
+            right.classList.remove('reset');
+            left.innerHTML = 'stop';
+            right.innerHTML = 'lap';
+        }  
     });
 
-    stop.addEventListener('click', function(){
-        clearTimeout(timerId);
-        timeToadd += Date.now() - startTime;
-    });
-
-    reset.addEventListener('click', function(){
-        elapsedTime = 0;
-        timeToadd = 0;
-        showLap.innerHTML = "";              
-        updateTimeText();
-    });
-
-    lap.addEventListener('click', function(){
-        var lapTime = getElapsedTime();
-        var time = convartTime(lapTime);
-        showLap.innerHTML = time.m + ':' + time.s + '.' + time.ms + '<br>' + showLap.innerHTML;    
+    right.addEventListener('click', function(){
+        if(right.classList.contains('lap') === true) {
+            var lapTime = getElapsedTime();
+            var time = convartTime(lapTime);
+            lapCount++;
+            showLap.innerHTML = lapCount + "　　" + time.m + ':' + time.s + '.' + time.ms + '<br>' + showLap.innerHTML;
+        } else if(right.classList.contains('reset') === true) {
+            elapsedTime = 0;
+            timeToadd = 0;
+            showLap.innerHTML = "";
+            lapCount = 0;             
+            updateTimeText();
+            left.classList.add('start');
+            right.classList.add('hide');
+            left.classList.remove('restart');
+            right.classList.remove('reset');
+            left.classList.remove('left');
+            right.classList.remove('right');
+            left.innerHTML = 'start';
+            right.innerHTML = 'lap';
+        }
     });
 })();
