@@ -1,0 +1,88 @@
+#title {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.japan-name {
+    position: absolute;
+    top: 20px;
+    left: 50%;  
+}
+.london-name {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+.usa-name {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+}
+#realTime {
+    position: absolute;
+    bottom: 20px;
+    left: 25%;   
+}
+#ukTime {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;   
+}
+#usaTime {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;   
+}
+.city {
+    font-size: 60px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+}
+
+.time {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+}
+
+.japan-hide {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: .7s;
+}
+
+.japan-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.0s;
+}
+
+.uk-hide {
+    opacity: 0;
+    transform: translateX(-30%);
+}
+.uk-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.0s;
+}
+.usa-hide {
+    opacity: 0;
+    transform: translateX(30%);
+}
+.usa-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.0s;
+}

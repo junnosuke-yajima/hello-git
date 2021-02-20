@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 header {
     position: fixed;
@@ -113,10 +113,3 @@ main {
     z-index: 9;
     transition: 1s;
 }
-
-h1 {
-    font-size: 40px;
-    color: red;
-    text-shadow: 1px 1px 1px black;
-}
-

@@ -47,6 +47,8 @@
             left.classList.add('left');
             right.classList.add('lap');
             right.classList.add('right');
+
+            
             left.classList.remove('start');
             right.classList.remove('hide');
             left.innerHTML = 'stop';
