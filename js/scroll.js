@@ -1,6 +1,6 @@
 $(function(){
     $(window).scroll(function(){
-        var jaPos =$('#japan-wrapper').offset().top - 200;
+        var jaPos =$('#japan-wrapper').offset().top - 300;
         var scr_count = $(window).scrollTop();
         if(scr_count > jaPos){
             $('#japImg').addClass('japan-show');
@@ -8,7 +8,7 @@ $(function(){
         }
     });
     $(window).scroll(function(){
-        var ukPos =$('#london-wrapper').offset().top - 200;
+        var ukPos =$('#london-wrapper').offset().top - 300;
         var scr_count = $(document).scrollTop();
         if(scr_count > ukPos){
             $('#ukImg').addClass('uk-show');
