@@ -1,16 +1,20 @@
 #title {
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 60px;
     letter-spacing: 5px;
 }
 
 img {
     width: 100%;
+    z-index: 0;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
     margin-top: 50px;
+    z-index: 0;
 }
 .japan-name {
     position: absolute;
@@ -43,10 +47,11 @@ img {
     left: 10%;   
 }
 .city {
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     letter-spacing: 5px;
     text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+    z-index: 1;
 }
 
 .time {
@@ -54,6 +59,7 @@ img {
     color: white;
     letter-spacing: 5px;
     text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+    z-index: 1;
 }
 
 .japan-hide {
@@ -79,7 +85,7 @@ img {
 }
 .usa-hide {
     opacity: 0;
-    transform: translateX(30%);
+    transform: translateX(-30%);
 }
 .usa-show {
     opacity: 1;

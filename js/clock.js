@@ -16,14 +16,7 @@ function showClock() {
     var clock = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById('realTime').innerHTML = clock;
 }
-setInterval('showClock()',10);
-
-var now = Date.now();
-function count() {
-    var count = Date.now() - now;
-    document.getElementById('now').innerHTML = count;
-}
-setInterval('count()', 10);
+setInterval('showClock()',100);
 
 function ukClock() {
     var timezoneoffset = 0;
@@ -34,7 +27,7 @@ function ukClock() {
     var clock = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById('ukTime').innerHTML = clock;
 }
-setInterval('ukClock()',10);
+setInterval('ukClock()',100);
 
 function usaClock() {
     var timezoneoffset = 5;
@@ -45,4 +38,4 @@ function usaClock() {
     var clock = nowHour + ":" + nowMin + ":" + nowSec;
     document.getElementById('usaTime').innerHTML = clock;
 }
-setInterval('usaClock()',10);
+setInterval('usaClock()',100);

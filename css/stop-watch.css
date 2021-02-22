@@ -29,10 +29,10 @@ button {
 
 .hide {
     position: absolute;
-    right: -30%;
+    left: -30%;
     margin: 0 auto;
     z-index: 3;
-    transition: .3s;
+    transition: .7s;
 }
 
 .left {
