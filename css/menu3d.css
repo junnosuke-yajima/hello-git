@@ -1,0 +1,72 @@
+#scene {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.mask1 {
+    background: crimson;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    transform: perspective(500px) translateZ(-20px);
+    box-shadow: 2px 2px 5px rgba(31, 31, 31, 0.6);
+    transition: .7s;
+}
+button:hover{
+    transform: perspective(500px) translateZ(0px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* .parent {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    transform-style:preserve-3d;
+} */
+.drawer {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: cyan;
+    transition: 1.0s;
+    transform-origin: center bottom;
+}
+
+.drawer:hover {
+    
+    transform: rotateX(180deg);
+}
+
+.door {
+    margin: 20px auto;
+    width: 100px;
+    height: 200px;
+
+}
+
+.door-child {
+    background: brown;
+    width: 100px;
+    height: 200px;
+    transition: 2s;
+    transform-origin: left center;
+    transition-timing-function: ease-in;
+}
+
+.door-child:hover {
+    transform: rotateY(180deg);
+}
