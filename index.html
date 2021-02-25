@@ -13,28 +13,64 @@
 <body>
 <header></header>
 <main>
-    <h1 id="title">World<br>Time<br>Difference</h1>
+    <div id="title-wrapper">
+            <h1 id="title">World<br>Time<br>Difference</h1>
+    </div>
     <div id="japan-wrapper" class="wrapper">
         <img src="./images/tokyo.jpg" id="japImg" class="japan-hide" alt="tokyo">
-        <p class="japan-name city">Tokyo<br>JAPAN</p>
-        <div id="realTime" class="time"></div>
+        <p id="japan-name" class="japan-name city name-hide">Tokyo<br>JAPAN</p>
+        <div id="realTime" class="time name-hide"></div>
+    </div>
+    <div id="jap-contents" class="content content-hide">
+        <h2>日本　東京</h2>
+        <p>北緯</p>
+        <span id="tokyo1"></span>
+        <span id="tokyo2"></span>
+        <span id="tokyo3"></span><br>
+        
+        <p>東経</p>
+        <span id="tokyo4"></span>
+        <span id="tokyo5"></span>
+        <span id="tokyo6"></span><br>
     </div>
     <div id="london-wrapper" class="wrapper">
         <img src="./images/rondon.jpg" id="ukImg" class="uk-hide" alt="london">
-        <p class="london-name city">London<br>UK</p>
-        <div id="ukTime" class="time"></div>
+        <p id="uk-name" class="london-name city name-hide">London<br>UK</p>
+        <div id="ukTime" class="time name-hide"></div>
+    </div>
+    <div id="uk-contents" class="content content-hide">
+        <h2>イギリス　ロンドン</h2>
+        <p>北緯</p>
+        <span id="uk1"></span>
+        <span id="uk2"></span>
+        <span id="uk3"></span><br>
+        
+        <p>西経</p>
+        <span id="uk4"></span>
+        <span id="uk5"></span>
+        <span id="uk6"></span><br>
     </div>
     <div id="usa-wrapper" class="wrapper">
         <img src="./images/usa.jpg" id="usaImg" class="usa-hide" alt="usa">
-        <p class="usa-name city">New York<br>USA</p>
-        <div id="usaTime" class="time"></div>
+        <p id="usa-name" class="usa-name city name-hide">New York<br>USA</p>
+        <div id="usaTime" class="time name-hide"></div>
     </div>
-    <h2>初めてのGIT</h2>
-    <h3>my first push</h3>
-    <a href="link.html">リンクに移動する</a>
+    <div id="usa-contents" class="content content-hide">
+        <h2>アメリカ　ニューヨーク</h2>
+        <p>北緯</p>
+        <span id="usa1"></span>
+        <span id="usa2"></span>
+        <span id="usa3"></span><br>
+        
+        <p>東経</p>
+        <span id="usa4"></span>
+        <span id="usa5"></span>
+        <span id="usa6"></span><br>
+    </div>
 </main>
 <script src="./js/clock.js"></script>
 <script src="./js/scroll.js"></script>
+<script src="./js/Geocoding.js"></script>
 <footer></footer>
 </body>
 </html>

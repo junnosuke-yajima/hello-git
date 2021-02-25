@@ -6,7 +6,7 @@ function validate(){
     } else if(!end.getTime()){
         alert('日付を入力してください'); 
     } else if(start > end){
-        alert('終了日を後の日付を入力してください');
+        alert('終了日を開始日より後の日付で入力してください');
     } else {
         getDayDiff();
     }
@@ -36,14 +36,20 @@ function getDayDiff(){
         }
     }
     var holiday = 0;
-    while(start < end){//定休日を弾く処理
-        for(let i = 0; i < 7; i++){
-            if(holidays[i].checked){
-                if(start.getDay() === Number(holidays[i].value)){
+    console.log(start);
+    console.log(end);
+    while(start <= end){//定休日を弾く処理
+        for(let i = 0; i < 6; i++){
+            if(start.getDay() === Number(holidays[i].value)){
+                console.log(start.getDay());
+                if(holidays[i].checked){
+                    console.log(holidays[i]);
+                    console.log(start.getDay());
                     holiday++;
                 }
             }
         }
+        console.log(start.getDay());
         start.setDate(start.getDate() + 1);
     }
     var work = diff - holiday;

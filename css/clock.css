@@ -1,9 +1,24 @@
 #title {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 60px;
+    font-size: 15vw;
     letter-spacing: 5px;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    animation: type 5s;
+    overflow: hidden;
+    
 }
+
+@keyframes type {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
 
 img {
     width: 100%;
@@ -47,7 +62,7 @@ img {
     left: 10%;   
 }
 .city {
-    font-size: 40px;
+    font-size: 10vw;
     color: white;
     letter-spacing: 5px;
     text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
@@ -55,7 +70,7 @@ img {
 }
 
 .time {
-    font-size: 50px;
+    font-size: 10vw;
     color: white;
     letter-spacing: 5px;
     text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
@@ -65,7 +80,7 @@ img {
 .japan-hide {
     opacity: 0;
     transform: translateY(30%);
-    transition: .7s;
+    
 }
 
 .japan-show {
@@ -82,6 +97,7 @@ img {
     opacity: 1;
     transform: translateX(0);
     transition: 1.0s;
+    overflow: hidden;
 }
 .usa-hide {
     opacity: 0;
@@ -91,4 +107,35 @@ img {
     opacity: 1;
     transform: translateX(0);
     transition: 1.0s;
+}
+.name-hide {
+    opacity: 0;
+}
+.name-show {
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition: 2.5s;
+}
+.content-hide {
+    opacity: 0;
+
+}
+
+.content-show {
+    opacity: 1;
+    transition: 4s;
+}
+.content {
+    margin-top: 5vw;
+    color: rgb(97, 97, 97)
+}
+.content h2 {
+    font-size: 7vw;
+}
+.content p {
+    font-size: 5vw;
+}
+.content span {
+    font-size: 5vw;
+    padding: 1vw;
 }
