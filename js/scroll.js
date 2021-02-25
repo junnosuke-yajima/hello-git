@@ -39,10 +39,11 @@ $(function(){
                 setInterval(Uk2, 18, 30);
                 setInterval(Uk3, 50, 30);
                 var uk4 = document.getElementById('uk4');
-                uk4.innerHTML = '0°';
+                uk4.innerHTML = ' 0°';
                 setInterval(Uk5, 18, 7);
                 setInterval(Uk6, 40, 32);
             }, 1000);
+            $('#uk7').text('日本との時差は－9時間です');
         }
     });
     $(window).scroll(function(){
@@ -60,12 +61,13 @@ $(function(){
             setTimeout(function(){
                 setInterval(Usa1, 15, 40);
                 setInterval(Usa2, 18, 42);
-                setInterval(Usa3, 50, 51);
+                setInterval(Usa3, 20, 51);
                 setInterval(Usa4, 5, 74);
                 var usa5 = document.getElementById('usa5');
-                usa5.innerHTML = '0’';
+                usa5.innerHTML = ' 0’';
                 setInterval(Usa6, 40, 21);
             }, 1000);
+            $('#usa7').text('日本との時差は－14時間です');
         }
     });
 
@@ -173,7 +175,7 @@ $(function(){
         if(s > num){
             clearInterval();
         } else {
-            uk5.innerHTML = s + '’';
+            uk5.innerHTML = `${s}’`;
         }
     }
     
