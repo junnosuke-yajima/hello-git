@@ -39,7 +39,7 @@ function getDayDiff(){
     console.log(start);
     console.log(end);
     while(start <= end){//定休日を弾く処理
-        for(let i = 0; i < 6; i++){
+        for(let i = 0; i < 7; i++){
             if(start.getDay() === Number(holidays[i].value)){
                 console.log(start.getDay());
                 if(holidays[i].checked){

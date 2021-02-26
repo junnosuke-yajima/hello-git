@@ -72,9 +72,6 @@ $(function(){
     });
 
     var i = 0;
-    var j = 0;
-    var k = 0;
-    
     function Tokyo1(num){
         var tokyo1 = document.getElementById('tokyo1');
         i++
@@ -84,6 +81,7 @@ $(function(){
             tokyo1.innerHTML = i + '°';
         }
     }
+    var j = 0;
     function Tokyo2(num){
         var tokyo2 = document.getElementById('tokyo2');
         j++
@@ -93,6 +91,7 @@ $(function(){
             tokyo2.innerHTML = j + '’';
         }
     }
+    var k = 0;
     function Tokyo3(num){
         var tokyo3 = document.getElementById('tokyo3');
         k++
@@ -103,9 +102,6 @@ $(function(){
         }
     }
     var l = 0;
-    var m = 0;
-    var n = 0;
-    
     function Tokyo4(num){
         var tokyo4 = document.getElementById('tokyo4');
         l++
@@ -115,6 +111,7 @@ $(function(){
             tokyo4.innerHTML = l + '°';
         }
     }
+    var m = 0;    
     function Tokyo5(num){
         var tokyo5 = document.getElementById('tokyo5');
         m++
@@ -124,6 +121,7 @@ $(function(){
             tokyo5.innerHTML = m + '’';
         }
     }
+    var n = 0;
     function Tokyo6(num){
         var tokyo6 = document.getElementById('tokyo6');
         n++
@@ -134,11 +132,6 @@ $(function(){
         }
     }
     var o = 0;
-    var p = 0;
-    var q = 0;
-    var r = 0;
-    var s = 0;
-    var t = 0;
     function Uk1(num){
         var uk1 = document.getElementById('uk1');
         o++
@@ -148,7 +141,7 @@ $(function(){
             uk1.innerHTML = o + '°';
         }
     }
-    
+    var p = 0;
     function Uk2(num){
         var uk2 = document.getElementById('uk2');
         p++
@@ -158,7 +151,7 @@ $(function(){
             uk2.innerHTML = p + '’';
         }
     }
-    
+    var q = 0;
     function Uk3(num){
         var uk3 = document.getElementById('uk3');
         q++
@@ -168,7 +161,7 @@ $(function(){
             uk3.innerHTML = q + '”';
         }
     }
-    
+    var s = 0;
     function Uk5(num){
         var uk5 = document.getElementById('uk5');
         s++
@@ -178,7 +171,7 @@ $(function(){
             uk5.innerHTML = `${s}’`;
         }
     }
-    
+    var t = 0;
     function Uk6(num){
         var uk6 = document.getElementById('uk6');
         t++
@@ -189,11 +182,6 @@ $(function(){
         }
     }
     u = 0;
-    v = 0;
-    w = 0;
-    x = 0;
-    y = 0;
-    z = 0;
     function Usa1(num){
         var usa1 = document.getElementById('usa1');
         u++
@@ -203,7 +191,7 @@ $(function(){
             usa1.innerHTML = u + '°';
         }
     }
-    
+    var v = 0;
     function Usa2(num){
         var usa2 = document.getElementById('usa2');
         v++
@@ -213,7 +201,7 @@ $(function(){
             usa2.innerHTML = v + '’';
         }
     }
-    
+    var w = 0;
     function Usa3(num){
         var usa3 = document.getElementById('usa3');
         w++
@@ -223,7 +211,7 @@ $(function(){
             usa3.innerHTML = w + '”';
         }
     }
-    
+    var x = 0;
     function Usa4(num){
         var usa4 = document.getElementById('usa4');
         x++
@@ -233,7 +221,7 @@ $(function(){
             usa4.innerHTML ='-' + x + '°';
         }
     }
-    
+    var z = 0;
     function Usa6(num){
         var usa6 = document.getElementById('usa6');
         z++
