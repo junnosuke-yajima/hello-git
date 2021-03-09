@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 #title {
     font-size: 15vw;
     letter-spacing: 5px;
@@ -24,13 +27,15 @@ img {
     width: 100%;
     z-index: 0;
 }
-
+@media screen and (max-width: 950px) {
 .wrapper {
     position: relative;
     width: 100%;
     margin-top: 50px;
     z-index: 0;
 }
+}
+
 .japan-name {
     position: absolute;
     top: 20px;
@@ -129,13 +134,37 @@ img {
     margin-top: 5vw;
     color: rgb(97, 97, 97)
 }
-.content h2 {
-    font-size: 7vw;
-}
-.content p {
-    font-size: 5vw;
-}
-.content span {
+.content {
     font-size: 5vw;
     padding: 1vw;
 }
+@media screen and (min-width: 950px) {
+    main {
+        width: 950px;
+    }
+    #title {
+        font-size: 150px;
+    }
+    .city {
+        font-size: 100px;
+    }
+    .time {
+        font-size: 100px;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 50px;
+    }
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wrapper {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        z-index: 0;
+    }
+    }
